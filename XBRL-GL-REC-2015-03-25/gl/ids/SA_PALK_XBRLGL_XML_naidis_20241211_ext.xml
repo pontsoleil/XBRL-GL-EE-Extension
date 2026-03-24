@@ -52,6 +52,9 @@
 			<!-- Aruandeperioon, algus- ja lõpukuupäev -->
 			<gl-cor:periodCoveredStart contextRef="now">2024-11-01</gl-cor:periodCoveredStart>
 			<gl-cor:periodCoveredEnd contextRef="now">2024-11-30</gl-cor:periodCoveredEnd>
+			<!-- EXTENSION for period extra info-->
+			<gl-ext:periodExtraIdentifier contextRef="now">PANKROTIS</gl-ext:periodExtraIdentifier>
+			<!-- EXTENSION end-->
 			<!--Majandustarkvara või infosüsteemi nimetus, milles andmeid kajastatakse. -->
 			<gl-bus:sourceApplication contextRef="now">Raamatupidamistarkvara Test</gl-bus:sourceApplication>
 			<!--Aruandes kasutatavaks valuutaks on EUR. -->
@@ -64,9 +67,6 @@
 				<gl-bus:organizationIdentifier contextRef="now">10001234</gl-bus:organizationIdentifier>
 				<!-- Tunnust täpsustav selgitus, mis ütleb, mis tunnusega on tegu. Kasutada antud struktuuriga väärtust. -->
 				<gl-bus:organizationDescription contextRef="now">ARIREGISTRIKOOD</gl-bus:organizationDescription>
-				<!-- EXTENSION for organization id type-->
-				<gl-ext:identifierCodeType contextRef="now">registration-number</gl-ext:identifierCodeType>
-				<!-- EXTENSION end-->
 			</gl-bus:organizationIdentifiers>
 		</gl-cor:entityInformation>
 		<!-- Antud päis (andmesektsioon) on mõeldud tekkepõhiste palgakulude esitamiseks (SA). Näidis on tehtud vastavalt XML lähteandmete näidisele. -->
@@ -78,13 +78,9 @@
 			<!--EntryNumber on päise unikaalne kood (lähtuvalt AA_SEKTSIOONID2022ap klassifikaatorist). -->
 			<gl-cor:entryNumber contextRef="now">EE0101001</gl-cor:entryNumber>
 			
-			<!-- EXTENSION for version and approval-->
-			<gl-ext:version contextRef="now">1.0</gl-ext:version> 
-			<gl-ext:isApproved contextRef="now">true</gl-ext:isApproved>	
-			<!-- EXTENSION end-->
-			
 			<!-- EXTENSION for multiple data sources-->
-			<gl-ext:sourceId contextRef="now">1</gl-ext:sourceId>
+			<gl-ext:sourceId contextRef="now">Software 1</gl-ext:sourceId>
+			<gl-ext:sourceCount contextRef="now">2</gl-ext:sourceCount>
 			<!-- EXTENSION end-->
 			
 			<!-- Iga eraldi esitatav raha summa nõuab eraldi kirjendi detaili (entryDetail), mille osas on vajalik esitada ka täiendav info. -->
@@ -121,16 +117,14 @@
 					<!--SA palgasektsioonis esitatakse antud välja all isikukood või mitteresidendikood. -->
 					<gl-cor:identifierCode contextRef="now">2020-12-01</gl-cor:identifierCode>
 					<!-- EXTENSION start-->
-					<gl-ext:identifierCodeType contextRef="now">birth-date</gl-ext:identifierCodeType>
-					<gl-ext:transactionPartyType contextRef="now">employee</gl-ext:transactionPartyType>
-					<gl-ext:additionalCategory contextRef="now">Free form additional category description</gl-ext:additionalCategory>
+					<gl-ext:employeeCategory contextRef="now">Free form additional category description</gl-ext:employeeCategory>
 					<!-- EXTENSION end-->
 					<gl-cor:identifierDescription contextRef="now">Mati Maasikas</gl-cor:identifierDescription>	
 				</gl-cor:identifierReference>
 				<gl-cor:identifierReference>
 					<gl-cor:identifierCode contextRef="now">12345678</gl-cor:identifierCode>
 					<!-- EXTENSION start-->
-					<gl-ext:identifierCodeType contextRef="now">registration-number</gl-ext:identifierCodeType>
+					<gl-ext:birthDate contextRef="now">1970-01-01</gl-ext:birthDate>
 					<!-- EXTENSION end-->
 					<gl-cor:identifierDescription contextRef="now">OÜ Puuviljad</gl-cor:identifierDescription>
 				</gl-cor:identifierReference>

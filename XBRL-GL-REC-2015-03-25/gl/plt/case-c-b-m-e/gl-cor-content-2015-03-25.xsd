@@ -14,7 +14,7 @@
 					<element ref="gl-cor:entityInformation" minOccurs="0" maxOccurs="1"/>
 					<element ref="gl-cor:entryHeader" minOccurs="0" maxOccurs="unbounded"/>
 				</sequence>
-                                <attribute name="id" type="ID"/>
+                    <attribute name="id" type="ID"/>
 			</restriction>
 		</complexContent>
 	</complexType>
@@ -32,6 +32,9 @@
 					<element ref="gl-cor:entriesComment" minOccurs="0" maxOccurs="1"/>
 					<element ref="gl-cor:periodCoveredStart" minOccurs="0" maxOccurs="1"/>
 					<element ref="gl-cor:periodCoveredEnd" minOccurs="0" maxOccurs="1"/>
+					<!-- EXTENSION for period extra info-->
+					<element ref="gl-ext:periodExtraIdentifier" minOccurs="0" maxOccurs="1"/>
+					<!-- EXTENSION end-->	
 					<element ref="gl-bus:periodCount" minOccurs="0" maxOccurs="1"/>
 					<element ref="gl-bus:periodUnit" minOccurs="0" maxOccurs="1"/>
 					<element ref="gl-bus:periodUnitDescription" minOccurs="0" maxOccurs="1"/>
@@ -139,15 +142,10 @@
 					<element ref="gl-bus:budgetScenarioText" minOccurs="0" maxOccurs="1"/>
 					<element ref="gl-bus:budgetScenario" minOccurs="0" maxOccurs="1"/>
 					<element ref="gl-bus:budgetAllocationCode" minOccurs="0" maxOccurs="1"/>
-					<element ref="gl-cor:entryNumberCounter" minOccurs="0" maxOccurs="1"/>
-					
-					<!-- EXTENSION for version and approval-->
-					<element ref="gl-ext:version" minOccurs="0" maxOccurs="1"/>
-					<element ref="gl-ext:isApproved" minOccurs="0" maxOccurs="1"/>
-					<!-- EXTENSION end-->
-					
+					<element ref="gl-cor:entryNumberCounter" minOccurs="0" maxOccurs="1"/>			
 					<!-- EXTENSION for multiple data sources-->
 					<element ref="gl-ext:sourceId" minOccurs="0" maxOccurs="1"/>
+					<element ref="gl-ext:sourceCount" minOccurs="0" maxOccurs="1"/>
 					<!-- EXTENSION end-->
 					<element ref="gl-cor:entryDetail" minOccurs="0" maxOccurs="unbounded"/>
 				</sequence>
@@ -385,9 +383,8 @@
 				<sequence>
 					<element ref="gl-cor:identifierCode" minOccurs="0" maxOccurs="1"/>
 					<!-- EU Extension start-->
-					<element ref="gl-ext:identifierCodeType" minOccurs="0" maxOccurs="1"/>
-					<element ref="gl-ext:transactionPartyType" minOccurs="0" maxOccurs="1"/>
-					<element ref="gl-ext:additionalCategory" minOccurs="0" maxOccurs="1"/>
+					<element ref="gl-ext:birthDate" minOccurs="0" maxOccurs="1"/>
+					<element ref="gl-ext:employeeCategory" minOccurs="0" maxOccurs="1"/>
 					<!-- EU Extension end-->
 					<element ref="gl-cor:identifierExternalReference" minOccurs="0" maxOccurs="unbounded"/>
 					<element ref="gl-cor:identifierOrganizationType" minOccurs="0" maxOccurs="1"/>

@@ -9,16 +9,16 @@
 	elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
 	<include schemaLocation="../../ext/gl-ext-2015-03-25.xsd"/>
-	<!-- bus:organizationIdentification and cor:identifierReference code types-->
-	<complexType name="identifierCodeTypeItemType">
+	
+	<complexType name="employeeCategoryItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="additionalCategoryItemType">
+	<complexType name="birthDateItemType">
 		<simpleContent>
-			<restriction base="xbrli:stringItemType">
+			<restriction base="xbrli:dateTimeItemType">
 			</restriction>
 		</simpleContent>
 	</complexType>
@@ -35,15 +35,15 @@
 			</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="versionItemType">
+	<complexType name="sourceCountItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 				</restriction>
 		</simpleContent>
 	</complexType>
-	<complexType name="isApprovedItemType">
+	<complexType name="periodExtraIdentifierItemType">
 		<simpleContent>
-			<restriction base="xbrli:booleanItemType">
+			<restriction base="xbrli:stringItemType">
 				</restriction>
 		</simpleContent>
 	</complexType>

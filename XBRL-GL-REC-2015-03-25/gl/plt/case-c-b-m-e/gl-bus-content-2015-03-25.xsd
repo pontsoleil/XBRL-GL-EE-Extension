@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
-<schema xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2015-03-25" xmlns:gl-ext="http://www.xbrl.org/int/gl/ext/2015-03-25" targetNamespace="http://www.xbrl.org/int/gl/bus/2015-03-25" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<schema xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2015-03-25" targetNamespace="http://www.xbrl.org/int/gl/bus/2015-03-25" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
-	<import namespace="http://www.xbrl.org/int/gl/ext/2015-03-25" schemaLocation="gl-ext-content-2015-03-25.xsd"/>
 	<include schemaLocation="../../bus/gl-bus-2015-03-25.xsd"/>
 	<complexType name="creatorItemType">
 		<simpleContent>
@@ -66,10 +65,7 @@
 			<restriction base="anyType">
 				<sequence>
 					<element ref="gl-bus:organizationIdentifier" minOccurs="0" maxOccurs="1"/>
-					<element ref="gl-bus:organizationDescription" minOccurs="0" maxOccurs="1"/>
-					<!-- EU Extension start-->
-					<element ref="gl-ext:identifierCodeType" minOccurs="1" maxOccurs="1"/>
-					<!-- EU Extension end-->				
+					<element ref="gl-bus:organizationDescription" minOccurs="0" maxOccurs="1"/>			
 				</sequence>
                                 <attribute name="id" type="ID"/>
 			</restriction>

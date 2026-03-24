@@ -5,17 +5,14 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
   <presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
-    <loc xlink:type="locator" xlink:href="../bus/gl-bus-2015-03-25.xsd#gl-bus_organizationIdentifiers" xlink:label="organizationIdentifiers" xlink:title="organizationIdentifiers"/>
-    <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_identifierCodeType" xlink:label="identifierCodeType" xlink:title="identifierCodeType"/>
-    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="organizationIdentifiers" xlink:to="identifierCodeType" xlink:title="presentation: identifierCodeType to organizationIdentifiers" order="100.0"/>
-    
-    <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_identifierReference" xlink:label="identifierReference" xlink:title="identifierReference"/>
-    <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_identifierCodeType" xlink:label="identifierCodeType" xlink:title="identifierCodeType"/>
-    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="identifierReference" xlink:to="identifierCodeType" xlink:title="presentation: identifierCodeType to identifierReference" order="100.0"/>
 
     <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_identifierReference" xlink:label="identifierReference" xlink:title="identifierReference"/>
-    <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_transactionPartyType" xlink:label="transactionPartyType" xlink:title="transactionPartyType"/>
-    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="identifierReference" xlink:to="transactionPartyType" xlink:title="presentation: transactionPartyType to identifierReference" order="101.0"/>
+    <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_employeeCategory" xlink:label="employeeCategory" xlink:title="employeeCategory"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="identifierReference" xlink:to="employeeCategory" xlink:title="presentation: identifierCodeType to identifierReference" order="100.0"/>
+
+    <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_identifierReference" xlink:label="identifierReference" xlink:title="identifierReference"/>
+    <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_birthDate" xlink:label="birthDate" xlink:title="birthDate"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="identifierReference" xlink:to="birthDate" xlink:title="presentation: birthDate to identifierReference" order="101.0"/>
 
     <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_entryHeader" xlink:label="entryHeader" xlink:title="entryHeader"/>
     <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_sourceId" xlink:label="sourceId" xlink:title="sourceId"/>
@@ -24,6 +21,10 @@
     <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_entryHeader" xlink:label="entryHeader" xlink:title="entryHeader"/>
     <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_sourcesCount" xlink:label="sourcesCount" xlink:title="sourcesCount"/>
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryHeader" xlink:to="sourcesCount" xlink:title="presentation: sourcesCount to entryHeader" order="101.0"/>
+
+  <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-documentInfo" xlink:label="documentInfo" xlink:title="documentInfo"/>
+    <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_periodExtraIdentifier" xlink:label="periodExtraIdentifier" xlink:title="periodExtraIdentifier"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="documentInfo" xlink:to="periodExtraIdentifier" xlink:title="presentation: periodExtraIdentifier to documentInfo" order="101.0"/>
 
 
 

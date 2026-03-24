@@ -79,6 +79,7 @@
 			<gl-cor:entryNumber contextRef="now">EE0101001</gl-cor:entryNumber>
 			
 			<!-- EXTENSION for multiple data sources-->
+			<gl-ext:version contextRef="now">1.0</gl-ext:version>
 			<gl-ext:sourceId contextRef="now">Software 1</gl-ext:sourceId>
 			<gl-ext:sourceCount contextRef="now">2</gl-ext:sourceCount>
 			<!-- EXTENSION end-->

@@ -41,6 +41,12 @@
 				</restriction>
 		</simpleContent>
 	</complexType>
+		<complexType name="versionItemType">
+		<simpleContent>
+			<restriction base="xbrli:stringItemType">
+				</restriction>
+		</simpleContent>
+	</complexType>
 	<complexType name="periodExtraIdentifierItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">

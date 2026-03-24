@@ -24,6 +24,7 @@
   <element name="birthDate" id="gl-ext_birthDate" type="gl-ext:birthDateItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 
   <!-- EXTENSION for multiple data sources-->
+  <element name="version" id="gl-ext_version" type="gl-ext:versionItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="sourceId" id="gl-ext_sourceId" type="gl-ext:sourceIdItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="sourceCount" id="gl-ext_sourceCount" type="gl-ext:sourceCountItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
    

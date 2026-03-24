@@ -15,12 +15,17 @@
     <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="identifierReference" xlink:to="birthDate" xlink:title="presentation: birthDate to identifierReference" order="101.0"/>
 
     <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_entryHeader" xlink:label="entryHeader" xlink:title="entryHeader"/>
+    <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_version" xlink:label="version" xlink:title="version"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryHeader" xlink:to="version" xlink:title="presentation: version to entryHeader" order="102.0"/>
+
+
+    <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_entryHeader" xlink:label="entryHeader" xlink:title="entryHeader"/>
     <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_sourceId" xlink:label="sourceId" xlink:title="sourceId"/>
-    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryHeader" xlink:to="sourceId" xlink:title="presentation: sourceId to entryHeader" order="100.0"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryHeader" xlink:to="sourceId" xlink:title="presentation: sourceId to entryHeader" order="103.0"/>
 
     <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-cor_entryHeader" xlink:label="entryHeader" xlink:title="entryHeader"/>
     <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_sourcesCount" xlink:label="sourcesCount" xlink:title="sourcesCount"/>
-    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryHeader" xlink:to="sourcesCount" xlink:title="presentation: sourcesCount to entryHeader" order="101.0"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="entryHeader" xlink:to="sourcesCount" xlink:title="presentation: sourcesCount to entryHeader" order="104.0"/>
 
   <loc xlink:type="locator" xlink:href="../cor/gl-cor-2015-03-25.xsd#gl-documentInfo" xlink:label="documentInfo" xlink:title="documentInfo"/>
     <loc xlink:type="locator" xlink:href="gl-ext-2015-03-25.xsd#gl-ext_periodExtraIdentifier" xlink:label="periodExtraIdentifier" xlink:title="periodExtraIdentifier"/>

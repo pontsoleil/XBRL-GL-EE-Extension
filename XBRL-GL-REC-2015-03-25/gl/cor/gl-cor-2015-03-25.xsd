@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
-<schema elementFormDefault="qualified" xmlns:xbrll="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/int/gl/cor/2015-03-25" attributeFormDefault="unqualified" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2015-03-25" xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2015-03-25">
+<schema targetNamespace="http://www.xbrl.org/int/gl/cor/2015-03-25"
+  xmlns:xbrll="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2015-03-25"
+  xmlns:gl-gen="http://www.xbrl.org/int/gl/gen/2015-03-25"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
   <annotation>
     <appinfo>
       <xbrll:linkbaseRef xlink:type="simple" xlink:href="gl-cor-2015-03-25-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
@@ -78,7 +85,7 @@
   <element name="postingDate" id="gl-cor_postingDate" type="gl-cor:postingDateItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="postingStatus" id="gl-cor_postingStatus" type="gl-gen:postingStatusItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="qualifierEntry" id="gl-cor_qualifierEntry" type="gl-gen:qualifierEntryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
-  <element name="reportingTreeIdentifier" id="gl-cor_" type="gl-cor:reportingTreeIdentifierItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="reportingTreeIdentifier" id="gl-cor_reportingTreeIdentifier" type="gl-cor:reportingTreeIdentifierItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="revisesUniqueID" id="gl-cor_revisesUniqueID" type="gl-cor:revisesUniqueIDItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="revisesUniqueIDAction" id="gl-cor_revisesUniqueIDAction" type="gl-gen:revisesUniqueIDActionItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="segmentParentTuple" id="gl-cor_segmentParentTuple" type="gl-cor:segmentParentTupleComplexType" substitutionGroup="xbrli:tuple" nillable="true"/>

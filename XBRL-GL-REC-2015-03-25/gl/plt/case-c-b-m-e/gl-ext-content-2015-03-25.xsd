@@ -23,6 +23,7 @@
 		</simpleContent>
 	</complexType>
 	<!-- cor: type of transaction party-->
+
 	<complexType name="transactionPartyTypeItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
@@ -41,7 +42,7 @@
 				</restriction>
 		</simpleContent>
 	</complexType>
-		<complexType name="versionItemType">
+	<complexType name="versionItemType">
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 				</restriction>
@@ -51,6 +52,13 @@
 		<simpleContent>
 			<restriction base="xbrli:stringItemType">
 				</restriction>
+		</simpleContent>
+	</complexType>
+	<!-- Addition by Nobu -->
+	<complexType name="identifierCodeTypeItemType">
+		<simpleContent>
+			<restriction base="xbrli:tokenItemType">
+			</restriction>
 		</simpleContent>
 	</complexType>
 </schema>

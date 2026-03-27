@@ -22,12 +22,35 @@
     <label xlink:type="resource" xlink:label="sourceId_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ext_sourceId" xml:lang="en">Source Identification</label>
     <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="sourceId" xlink:to="sourceId_lbl"/>
 
-    <loc xlink:type="locator" xlink:href="../gl-ext-2015-03-25.xsd#gl-ext_sourcesCount" xlink:label="sourcesCount"/>
-    <label xlink:type="resource" xlink:label="sourcesCount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">Total count of data sources. Used in the case of multiple data sources.</label>
-    <label xlink:type="resource" xlink:label="sourcesCount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ext_sourcesCount" xml:lang="en">Sources Count</label>
-    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="sourcesCount" xlink:to="sourcesCount_lbl"/>
+<!-- Modification by Nobu: the id value in the schema is singular. -->
+    <loc xlink:type="locator" xlink:href="../gl-ext-2015-03-25.xsd#gl-ext_sourceCount" xlink:label="sourceCount"/>
+    <label xlink:type="resource" xlink:label="sourceCount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">Total count of data sources. Used in the case of multiple data sources.</label>
+    <label xlink:type="resource" xlink:label="sourceCount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ext_sourceCount" xml:lang="en">Source Count</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="sourceCount" xlink:to="sourceCount_lbl"/>
+<!-- End of modification by Nobu. -->
  
-
+<!-- Addition by Nobu -->
+<!-- gl-ext:periodExtraIdentifier -->
+    <loc xlink:type="locator" xlink:href="../gl-ext-2015-03-25.xsd#gl-ext_periodExtraIdentifier" xlink:label="periodExtraIdentifier"/>
+    <label xlink:type="resource" xlink:label="periodExtraIdentifier_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">Specifies period extra ientifier.</label>
+    <label xlink:type="resource" xlink:label="periodExtraIdentifier_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ext_periodExtraIdentifier_en" xml:lang="en">Period Extra Identifier</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="periodExtraIdentifier" xlink:to="periodExtraIdentifier_lbl"/>
+<!-- gl-ext:version -->
+    <loc xlink:type="locator" xlink:href="../gl-ext-2015-03-25.xsd#gl-ext_version" xlink:label="version"/>
+    <label xlink:type="resource" xlink:label="version_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">Specifies version.</label>
+    <label xlink:type="resource" xlink:label="version_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ext_version_en" xml:lang="en">Version</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="version" xlink:to="version_lbl"/>
+<!-- gl-ext:birthDate -->
+    <loc xlink:type="locator" xlink:href="../gl-ext-2015-03-25.xsd#gl-ext_birthDate" xlink:label="birthDate"/>
+    <label xlink:type="resource" xlink:label="birthDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">Specifies birth date.</label>
+    <label xlink:type="resource" xlink:label="birthDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ext_birthDate_en" xml:lang="en">Birth Dater</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="birthDate" xlink:to="birthDate_lbl"/>    
+<!-- gl-ext:employeeCategory -->
+    <loc xlink:type="locator" xlink:href="../gl-ext-2015-03-25.xsd#gl-ext_employeeCategory" xlink:label="employeeCategory"/>
+    <label xlink:type="resource" xlink:label="employeeCategory_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="en">Specifies pemployee category.</label>
+    <label xlink:type="resource" xlink:label="employeeCategory_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ext_employeeCategory_en" xml:lang="en">Employee Category</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="employeeCategory" xlink:to="employeeCategory_lbl"/>
+<!-- End of addition by Nobu. -->
 
   </labelLink>
 </linkbase>

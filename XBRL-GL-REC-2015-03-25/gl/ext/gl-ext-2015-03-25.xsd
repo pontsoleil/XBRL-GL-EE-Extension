@@ -20,6 +20,8 @@
   <import namespace="http://www.xbrl.org/int/gl/gen/2015-03-25" schemaLocation="../gen/gl-gen-2015-03-25.xsd"/>  
   
   <!-- EXTENSION for identifiers-->
+  <element name="identifierCodeType" id="gl-ext_identifierCodeType" type="gl-ext:identifierCodeTypeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/> <!-- added by Nobu -->
+  <element name="transactionPartyType" id="gl-ext_transactionPartyType" type="gl-ext:transactionPartyTypeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/> <!-- added by Nobu -->
   <element name="employeeCategory" id="gl-ext_employeeCategory" type="gl-ext:employeeCategoryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
   <element name="birthDate" id="gl-ext_birthDate" type="gl-ext:birthDateItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
 
